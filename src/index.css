@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.cursive-font {
+  font-family: "Oooh Baby", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  background-image: url(./assets/view-white-crumpled-paper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: initial;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*for typewriter*/
+
+.spinner {
+  width: 176px;
+  height: 176px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+ }
+ 
+ .spinner > div {
+  background-color: #24242451;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 8px solid #242424;
+ }
+ 
+ .spinner div:nth-of-type(1) {
+  transform: translateZ(-88px) rotateY(180deg);
+ }
+ 
+ .spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+ }
+ 
+ .spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+ }
+ 
+ .spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+ }
+ 
+ .spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+ }
+ 
+ .spinner div:nth-of-type(6) {
+  transform: translateZ(88px);
+ }
+ 
+ @keyframes spinner-y0fdc1 {
+  0% {
+   transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+ 
+  50% {
+   transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+ 
+  100% {
+   transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+ }
+/* 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
