@@ -22,7 +22,7 @@ const Select = () => {
         content_type = <p>image</p>
     }
     return (
-        <section className="flex flex-col items-center w-screen gap-5 ">
+        <section className="md:p-8 flex flex-col gap-5 items-center justify-center ">
             {content_type}
         </section>);
 }

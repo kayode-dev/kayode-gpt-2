@@ -41,11 +41,11 @@ const ChatView = () => {
 
   if (responseValid == true) {
 
-    contentToDisplay = <div className="grid gap-10 grid-cols-2 bg-orange-400 flex-1 pb-10 w-10/12"><ChatResult content={gptResponse} /><ChatResult content={geminiResponse} /></div>;
+    contentToDisplay = <div className="grid gap-10 grid-cols-1 flex-1 pb-10 md:w-10/12"><ChatResult content={gptResponse} model={"Chat GPT"}/><ChatResult content={geminiResponse} model={"Google Gemini"} /></div>;
   }
-  return (<div className="bg-red-700 h-screen pt-20 flex flex-col  items-center overflow-hidden">
+  return (<div className="flex flex-col w-full md:w-10/12 items-center">
     <h1 className="text-3xl mb-4 font-bold">Chat to me</h1>
-    <form className="prompt-form flex gap-10 mb-10 w-10/12" onSubmit={submitHandler}>
+    <form className="prompt-form flex gap-4 md:gap-10 mb-10 md:w-10/12 w-full" onSubmit={submitHandler}>
       <input
         type="text"
         placeholder="What can i help you with today?"
