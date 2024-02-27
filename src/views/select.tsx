@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ChatView from "../components/chatview";
+import ImageView from "../components/imageview";
 
 const Select = () => {
     const [selectedOption, setSelectedOption] = useState("");
@@ -19,7 +20,7 @@ const Select = () => {
         content_type = <ChatView/>
     }
     if (selectedOption == "image") {
-        content_type = <p>image</p>
+        content_type = <ImageView/>
     }
     return (
         <section className="md:p-8 flex flex-col gap-5 items-center justify-center ">

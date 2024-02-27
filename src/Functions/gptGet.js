@@ -57,7 +57,7 @@ const getGptImage = async (prompt) => {
 	});
 
 	if (response != null) {
-		return response.data.data[0].url;
+		return response.data[0].url;
 	}
 };
 
