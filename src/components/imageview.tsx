@@ -40,7 +40,7 @@ const ImageView = () => {
 
     if (responseValid == true) {
 
-        contentToDisplay = <div className=" flex pb-10 md:w-10/12 justify-center items-center"><ImageResult imageUrl={gptResponse} /></div>;
+        contentToDisplay = <div className="flex pb-10 md:w-10/12 justify-center items-center"><ImageResult imageUrl={gptResponse} /></div>;
     }
     return (<div className="flex flex-col w-full md:w-10/12 items-center ">
         <h1 className="text-3xl mb-4 font-bold">Image Generator</h1>
